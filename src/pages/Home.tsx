@@ -23,7 +23,7 @@ export function Home() {
             <div className="flex gap-4 justify-center md:justify-start items-center">
               <Link
                 to="/contacto"
-                className="bg-brand-green text-white px-8 py-[14px] rounded-[2px] text-[14px] font-semibold tracking-[1px] uppercase transition-colors hover:bg-[#86c89a]"
+                className="bg-brand-green text-white px-8 py-[14px] rounded-[2px] text-[14px] font-semibold tracking-[1px] uppercase transition-colors hover:brightness-95"
               >
                 Encomendar Agora
               </Link>
@@ -34,7 +34,7 @@ export function Home() {
                 Ver Galeria
               </Link>
             </div>
-            
+
             <div className="mt-16 flex gap-4 md:gap-8 justify-center md:justify-start items-center">
               <div className="flex -space-x-2">
                 <div className="w-8 h-8 rounded-full border-2 border-white bg-brand-pink"></div>
@@ -47,27 +47,27 @@ export function Home() {
         </div>
         <FadeIn delay={0.3} className="flex-1 w-full relative flex items-center justify-center pt-10 md:pt-0">
           <div className="relative w-full h-[400px] md:h-[500px] flex items-center justify-center">
-            
+
             <div className="absolute w-[220px] h-[280px] md:w-64 md:h-80 bg-white p-4 shadow-[0_10px_30px_rgba(0,0,0,0.03)] rotate-[-6deg] z-10 border border-gray-100 flex flex-col">
               <div className="w-full h-full bg-gray-100 overflow-hidden relative">
-                 <img 
-                   src="/imgs/img1.jpg" 
-                   alt="Série Pastel" 
-                   loading="lazy"
-                   className="object-cover w-full h-full"
-                 />
+                <img
+                  src="/imgs/img1.jpg"
+                  alt="Série Pastel"
+                  loading="lazy"
+                  className="object-cover w-full h-full"
+                />
               </div>
               <div className="mt-4 text-[10px] uppercase tracking-widest font-bold opacity-30 text-[#2D3436]">Série Pastel - 01</div>
             </div>
 
             <div className="absolute w-[240px] h-[320px] md:w-72 md:h-96 bg-white p-4 shadow-[0_10px_30px_rgba(0,0,0,0.03)] rotate-[4deg] z-20 border border-gray-100 flex flex-col">
               <div className="w-full h-full bg-[#E5E7EB] overflow-hidden relative">
-                 <img 
-                   src="/imgs/img2.jpg" 
-                   alt="Retrato" 
-                   loading="lazy"
-                   className="object-cover w-full h-full"
-                 />
+                <img
+                  src="/imgs/img3.jpg"
+                  alt="Retrato"
+                  loading="lazy"
+                  className="object-cover w-full h-full"
+                />
               </div>
               <div className="mt-4 flex justify-between items-center">
                 <span className="text-[10px] uppercase tracking-widest font-bold text-[#2D3436]">Retrato de Família</span>
@@ -87,10 +87,10 @@ export function Home() {
             Destaques
           </h2>
         </FadeIn>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {[
-            { id: 1, title: "Moldura Minimalista", price: "25.000 Kz", img: "/imgs/img3.jpg" },
+            { id: 1, title: "Moldura Minimalista", price: "25.000 Kz", img: "/imgs/img2.jpg" },
             { id: 2, title: "Composição Botânica", price: "40.000 Kz", img: "/imgs/img4.jpg" },
             { id: 3, title: "Abstrato Suave", price: "35.000 Kz", img: "/imgs/img5.jpg" },
           ].map((item, index) => (
@@ -112,7 +112,7 @@ export function Home() {
             </FadeIn>
           ))}
         </div>
-        
+
         <FadeIn delay={0.4} className="flex justify-center mt-4">
           <Link
             to="/galeria"
@@ -137,20 +137,20 @@ export function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
-              { 
-                icon: <Camera className="w-8 h-8 text-brand-green" />, 
-                title: "1. Escolha a sua Foto", 
-                desc: "Selecione aquela memória especial que merece um lugar de destaque na sua parede." 
+              {
+                icon: <Camera className="w-8 h-8 text-brand-green" />,
+                title: "1. Escolha a sua Foto",
+                desc: "Selecione aquela memória especial que merece um lugar de destaque na sua parede."
               },
-              { 
-                icon: <Check className="w-8 h-8 text-brand-yellow" />, 
-                title: "2. Personalize", 
-                desc: "Escolha o tamanho, o tipo de moldura e o acabamento que melhor combina com o seu espaço." 
+              {
+                icon: <Check className="w-8 h-8 text-brand-yellow" />,
+                title: "2. Personalize",
+                desc: "Escolha o tamanho, o tipo de moldura e o acabamento que melhor combina com o seu espaço."
               },
-              { 
-                icon: <Truck className="w-8 h-8 text-brand-blue" />, 
-                title: "3. Receba em Casa", 
-                desc: "Nós tratamos de tudo. Produção artesanal e entrega segura em qualquer ponto de Luanda." 
+              {
+                icon: <Truck className="w-8 h-8 text-brand-blue" />,
+                title: "3. Receba em Casa",
+                desc: "Nós tratamos de tudo. Produção artesanal e entrega segura em qualquer ponto de Luanda."
               },
             ].map((step, index) => (
               <FadeIn key={index} delay={0.1 * index} className="flex flex-col items-center text-center group">
@@ -190,7 +190,7 @@ export function Home() {
               <h3 className="text-3xl font-serif">Minimalista</h3>
             </div>
           </FadeIn>
-          
+
           <div className="grid grid-rows-2 gap-6">
             <FadeIn delay={0.2} className="relative group cursor-pointer overflow-hidden">
               <img src="/imgs/img9.jpg" alt="Abstrato" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
@@ -236,7 +236,7 @@ export function Home() {
                 ))}
               </div>
             </FadeIn>
-            
+
             <FadeIn delay={0.2} className="relative hidden lg:block">
               <div className="aspect-square bg-brand-green/20 rounded-full flex items-center justify-center p-12">
                 <div className="w-full h-full border border-white/10 rounded-full flex items-center justify-center relative">
@@ -262,7 +262,7 @@ export function Home() {
         <FadeIn className="bg-brand-pink/5 rounded-3xl p-8 md:p-16 flex flex-col items-center text-center gap-8 relative overflow-hidden">
           <div className="absolute -top-10 -right-10 w-40 h-40 bg-brand-pink opacity-10 rounded-full blur-3xl"></div>
           <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-brand-blue opacity-10 rounded-full blur-3xl"></div>
-          
+
           <div className="max-w-2xl z-10">
             <h2 className="font-serif text-3xl md:text-5xl font-normal text-[#2D3436] mb-6">
               Pronto para transformar a sua <span className="italic">casa</span>?
@@ -270,11 +270,11 @@ export function Home() {
             <p className="text-[#2D3436]/80 mb-10">
               Subscreva para receber dicas de decoração e ofertas exclusivas da Personalize Luanda.
             </p>
-            
+
             <form className="flex flex-col sm:flex-row gap-3 w-full max-w-md mx-auto" onSubmit={(e) => e.preventDefault()}>
-              <input 
-                type="email" 
-                placeholder="O seu melhor e-mail" 
+              <input
+                type="email"
+                placeholder="O seu melhor e-mail"
                 className="flex-1 px-6 py-4 bg-white border border-gray-100 focus:outline-none focus:border-brand-green transition-colors text-sm rounded-[2px]"
               />
               <button className="bg-[#2D3436] text-white px-8 py-4 text-[12px] font-bold uppercase tracking-widest hover:bg-brand-green transition-colors rounded-[2px]">
