@@ -27,7 +27,7 @@ export function Services() {
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-800">
             Os Nossos Serviços
           </h1>
-          <p className="text-slate-500 max-w-xl mx-auto">
+          <p className="text-[#2D3436]/80 max-w-xl mx-auto">
             Mais do que vender quadros, oferecemos soluções completas para eternizar os seus momentos na parede.
           </p>
         </div>
@@ -40,7 +40,7 @@ export function Services() {
               <h3 className="text-xl font-medium text-slate-800 border-l-4 border-brand-yellow pl-3">
                 {service.title}
               </h3>
-              <p className="text-slate-600 leading-relaxed text-sm md:text-base">
+              <p className="text-[#2D3436]/80 leading-relaxed text-sm md:text-base">
                 {service.description}
               </p>
             </div>

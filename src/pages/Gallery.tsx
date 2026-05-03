@@ -1,12 +1,15 @@
 import { FadeIn } from "@/components/ui/FadeIn";
 
 const galleryImages = [
-  { id: 1, title: "Arte 1", src: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=600&auto=format&fit=crop" },
-  { id: 2, title: "Arte 2", src: "https://images.unsplash.com/photo-1543857778-c4a1a3e0b2eb?q=80&w=600&auto=format&fit=crop" },
-  { id: 3, title: "Arte 3", src: "https://images.unsplash.com/photo-1578301978018-3005759f48f7?q=80&w=600&auto=format&fit=crop" },
-  { id: 4, title: "Arte 4", src: "https://images.unsplash.com/photo-1581337204873-ef36aa186caa?q=80&w=600&auto=format&fit=crop" },
-  { id: 5, title: "Arte 5", src: "https://images.unsplash.com/photo-1572949645841-094f3a9c4c94?q=80&w=600&auto=format&fit=crop" },
-  { id: 6, title: "Arte 6", src: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=600&auto=format&fit=crop" }
+  { id: 1, title: "Arte 1", src: "/imgs/img1.jpg" },
+  { id: 2, title: "Arte 2", src: "/imgs/img2.jpg" },
+  { id: 3, title: "Arte 3", src: "/imgs/img3.jpg" },
+  { id: 4, title: "Arte 4", src: "/imgs/img4.jpg" },
+  { id: 5, title: "Arte 5", src: "/imgs/img5.jpg" },
+  { id: 6, title: "Arte 6", src: "/imgs/img6.jpg" },
+  { id: 7, title: "Arte 7", src: "/imgs/img7.jpg" },
+  { id: 8, title: "Arte 8", src: "/imgs/img8.jpg" },
+  { id: 9, title: "Arte 9", src: "/imgs/img9.jpg" }
 ];
 
 export function Gallery() {
@@ -17,7 +20,7 @@ export function Gallery() {
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-800">
             A Nossa Galeria
           </h1>
-          <p className="text-slate-500">
+          <p className="text-[#2D3436]/80">
             Inspire-se com algumas das nossas composições mais populares e descubra o estilo ideal para as suas paredes.
           </p>
         </div>

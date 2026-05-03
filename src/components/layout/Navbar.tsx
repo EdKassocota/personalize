@@ -17,14 +17,8 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-40 w-full bg-brand-bg/80 backdrop-blur-md border-b border-gray-100">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <NavLink to="/" className="flex items-center gap-2 text-[#2D3436]" onClick={() => setIsOpen(false)}>
-          <div className="w-8 h-8 flex flex-wrap">
-            <div className="w-4 h-4 bg-brand-green"></div>
-            <div className="w-4 h-4 bg-brand-blue"></div>
-            <div className="w-4 h-4 bg-brand-pink"></div>
-            <div className="w-4 h-4 bg-brand-yellow"></div>
-          </div>
-          <span className="font-bold text-xl tracking-tighter uppercase">PERSONALIZE</span>
+        <NavLink to="/" className="flex items-center" onClick={() => setIsOpen(false)}>
+          <img src="/imgs/logo.png" alt="Personalize Logo" className="w-16 h-16 object-contain" />
         </NavLink>
 
         {/* Desktop Nav */}
@@ -36,7 +30,7 @@ export function Navbar() {
               className={({ isActive }) =>
                 cn(
                   "text-[12px] tracking-[1px] uppercase font-semibold transition-colors hover:text-brand-green py-1",
-                  isActive ? "text-[#2D3436] border-b border-brand-green" : "text-[#555555]"
+                  isActive ? "text-[#2D3436] border-b border-brand-green" : "text-[#2D3436]/70"
                 )
               }
             >
@@ -70,7 +64,7 @@ export function Navbar() {
               className={({ isActive }) =>
                 cn(
                   "text-[12px] tracking-[1px] uppercase font-semibold py-2 transition-colors",
-                  isActive ? "text-brand-green" : "text-[#555555]"
+                  isActive ? "text-brand-green" : "text-[#2D3436]/70"
                 )
               }
             >
